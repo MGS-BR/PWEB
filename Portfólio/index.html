@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Henrique Dias da Silva">
+    <meta name="description" content="Portfólio de Pedro Henrique Dias da Silva, desenvolvedor web.">
+    <meta name="keywords" content="Desenvolvedor, Web, HTML, CSS, Javascript">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Pedro Silva Desenvolvedor Web</title>
+</head>
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">
+                    Pedro Silva
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#formation" class="nav-link">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home bd grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">Olá, <br>Eu sou o
+                    <span class="home-title-color">
+                        Pedro Silva
+                    </span><br>Desenvolvedor Web
+                </h1>
+                <a href="#contact" class="button">Contato</a>
+            </div>
+            <div class="home-img">
+                <br><br>
+                <img src="./images/profile.webp" width="300" height="300" alt="Foto Pedro Silva" title="Pedro"/>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="about-container bd-grid">
+                <div>
+                    <h2 class="about-subtitle">Olá, eu sou o Pedro</h2>
+                    <p class="about-text">
+                        Sou recém-formando em ADS Fatec Sorocaba-SP<br>
+                        Sou apaixonado por criar aplicativos... Estou à disposição para novas oportunidades
+                    </p>
+                    <br><br>
+                    <h3>Minha Filosofia</h3>
+                    <p>Se dá para automatizar, siplificar ou melhorar, não faça manualmente.</p>
+                    <blockquote cite="https://editoraiberoamericana.com">
+                        O que vale na vida não é o ponto de partida e sim a caminhada.
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section class="formation section" id="formation">
+            <h2 class="serction-title">Formação</h2>
+            <div class="formation-container bd-grid">
+                <h3><u>Graduação</u></h3>
+                <p>Tecnologia em ADS <br>
+                    Fatec Sorocaba - SP Período : 2025 a 2027
+                </p>
+                <br><br>
+                <h3><u>Complementar</u></h3>
+                <ol>
+                    <li>Python - Instituição(X horas)</li>
+                    <li>JavaScript - Instituição(X horas)</li>
+                    <li>Java - Instituição(X horas)</li>
+                </ol>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Habilidades Profissionais</h2>
+                    <p class="skills-text">Minhas habilidades são focadas em <b>web</b>, 
+                        incluindo <abbr title="HyperText Markup Language">HTML</abbr>, CSS, JavaScript e vários
+                        <i>frameworks</i>.
+                    </p>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>HTML e CSS3</p>
+                        </div>
+                        <div class="skills-bar skills-html"></div>
+                        <div>
+                            <span class="skills-percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>JAVASCRIPT</p>
+                        </div>
+                        <div class="skills-bar skills-js"></div>
+                        <div>
+                            <span class="skills-percentage">70%</span>
+                        </div>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <dl>
+                        <dt><em>Comunicação</em></dt>
+                        <dd>Liderança e Apresentações</dd>
+                        <dt><em>Trabalho em equipe</em></dt>
+                        <dd>Equipe de robótica e competições</dd>
+                        <dt><em>Aprendizado Contínuo</em></dt>
+                        <dd>Interesse constante em aprender novas tecnlogias</dd>
+                        <dt><em>Autonomia</em></dt>
+                        <dd>Capacidade de pesquisar, testar e implementar soluções de forma independente</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-text">
+                <h3>Tabela de Projetos</h3>
+                <br>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Projeto</th>
+                            <th>Tecnologias</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Site Pessoal</td>
+                            <td>HTML, CSS, JS</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>Intranet Contábil</td>
+                            <td>HTML, CSS, JS</td>
+                            <td>Concluído</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="projects-container bd-grid">
+                <div class="projects-img">
+                    <figure>
+                        <a href="https://github.com/MGS-BR" target="_blank">
+                            <img src="./images/project-1.jpg" alt="" width="300" height="300">
+                        </a>
+                        <figcaption>Projeto Site Pessoal</figcaption>
+                    </figure>
+                </div>
+                <div class="projects-img">
+                    <figure>
+                        <a href="https://github.com/MGS-BR" target="_blank">
+                            <img src="./images/project-2.jpeg" alt="" width="300" height="300">
+                        </a>
+                        <figcaption>Projeto Intranet Contábil</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
