@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Henrique Dias da Silva">
+    <meta name="description" content="Trabalho de pesquisa acadêmica sobre Frameworks.">
+    <meta name="keywords" content="Desenvolvedor, Web, HTML, CSS, Javascript">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Frameworks: Definições, Exemplos e Critérios de Escolha</title>
+</head>
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">Frameworks</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Introdução</a></li>
+                    <li class="nav-item"><a href="#formation" class="nav-link">Fundamentação</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Classificação</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Mercado</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Referências</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">
+                    <span class="home-title-color">FRAMEWORKS:</span><br>
+                    DEFINIÇÕES, EXEMPLOS E CRITÉRIOS DE ESCOLHA
+                </h1>
+                <p><b>Autor:</b> Pedro Henrique Dias da Silva</p>
+                <p><i>Análise e Desenvolvimento de Sistemas — Fatec Sorocaba (2026)</i></p>
+                <a href="https://github.com/MGS-BR/PWEB/blob/main/Atividade2/Frameworks%20-%20Fatec%20Sorocaba%20PWEB.docx" class="button" target="_blank">Ver documento</a>
+                <a href="#about" class="button">Acessar Pesquisa</a>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">1. Introdução</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <h2 class="about-subtitle">Contexto e Governança</h2>
+                    <p class="about-text">
+                        A engenharia de software contemporânea fundamenta-se no princípio do reuso para elevar a qualidade e reduzir o esforço de desenvolvimento. Nesse contexto, os <i>frameworks</i> representam uma das abordagens mais eficazes, permitindo que uma família de produtos seja gerada a partir de uma estrutura única que captura conceitos gerais de um domínio.
+                    </p>
+                    <p class="about-text">
+                        A adoção de <i>frameworks</i> não é apenas uma escolha técnica, mas uma decisão estratégica de Governança de TI, que deve alinhar a metodologia escolhida aos objetivos e estratégias organizacionais para garantir resultados eficientes e menor tempo de projeto.
+                    </p>
+                    <br>
+                    <h3>Princípio de Design</h3>
+                    <blockquote cite="https://editoraiberoamericana.com">
+                        "Don't call us, we will call you" (Princípio de Hollywood - Inversão de Controle).
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="formation section" id="formation">
+            <h2 class="section-title">2. Fundamentação Teórica e Definições</h2>
+            <div class="formation-container bd-grid">
+                <h3><u>Definição Acadêmica</u></h3>
+                <p>
+                    A âncora principal da teoria sobre <i>frameworks</i> na literatura acadêmica é o trabalho de Fayad & Schmidt (1997), que define um <i>framework</i> como um conjunto integrado de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas.
+                </p>
+                <br>
+                <h3><u>Características Distintivas</u></h3>
+                <ol>
+                    <li><b>Inversão de Controle (IoC):</b> Também conhecida como o "Princípio de Hollywood" (Don't call us, we will call you), onde o <i>framework</i> assume o controle da execução e invoca métodos da aplicação em resposta a eventos específicos.</li>
+                    <li><b>Software Parcialmente Completo:</b> É uma estrutura inacabada projetada para ser instanciada, oferecendo construtores básicos e definindo uma arquitetura comum.</li>
+                    <li><b>Hot-spots (Pontos de Extensão):</b> São locais explicitamente definidos onde o desenvolvedor deve adaptar o código para funcionalidades específicas de certos módulos.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">3. Classificação dos Frameworks</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Técnicas de Extensão e Escopo</h2>
+                    <p class="skills-text">
+                        Os <i>frameworks</i> podem ser classificados segundo sua técnica de extensão ou escopo de aplicação no ecossistema <abbr title="HyperText Markup Language">HTML</abbr>, CSS e JavaScript:
+                    </p>
+                    
+                    <dl>
+                        <dt><em>3.1. Quanto à Técnica de Extensão</em></dt>
+                        <dd><b>Caixa Branca (White-box):</b> A extensão ocorre principalmente via herança, exigindo que o desenvolvedor conheça a estrutura interna para implementar métodos abstratos ou redefinir métodos ganchos (hook methods).</dd>
+                        <dd><b>Caixa Preta (Black-box):</b> A extensão é feita via composição e configuração, seguindo interfaces ou contratos definidos, sendo geralmente mais fáceis de usar por não exigirem conhecimento profundo do código interno.</dd>
+                        <dd><b>Caixa Cinza (Gray-box):</b> Combina características de ambos os modelos para mitigar suas desvantagens individuais.</dd>
+
+                        <dt><em>3.2. Quanto ao Escopo de Aplicação</em></dt>
+                        <dd><b>Infraestrutura de Sistemas:</b> Simplificam o desenvolvimento de sistemas operacionais, frameworks de comunicação e interfaces gráficas.</dd>
+                        <dd><b>Integração de Middleware:</b> Utilizados para integrar aplicações distribuídas, ocultando detalhes de baixo nível da comunicação entre componentes.</dd>
+                        <dd><b>Aplicações Corporativas:</b> Voltados para domínios específicos (ex: financeiro, aviação ou telecomunicações), encapsulando conhecimento especializado do setor.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section-title">4. Exemplos no Mercado e Seleção</h2>
+            <div class="projects-text bd-grid">
+                <h2 class="about-subtitle">Métricas e Exemplos Atuais (2024-2026)</h2>
+                
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <p>React (Uso no Front-end Web)</p>
+                    </div>
+                    <div class="skills-bar skills-html"></div>
+                    <div>
+                        <span class="skills-percentage">83%</span>
+                    </div>
+                </div>
+                
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <p>Node.js (Dominância em Runtimes Back-end)</p>
+                    </div>
+                    <div class="skills-bar skills-js"></div>
+                    <div>
+                        <span class="skills-percentage">90%</span>
+                    </div>
+                </div>
+
+                <br>
+                <h3>Tabela de Frameworks Atuais</h3>
+                <br>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Exemplos</th>
+                            <th>Características</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Back-end (Servidor)</td>
+                            <td>Spring Boot, Django, Express.js</td>
+                            <td>Microsserviços robustos, alta produtividade e flexibilidade minimalista.</td>
+                        </tr>
+                        <tr>
+                            <td>Front-end (Web)</td>
+                            <td>React, Vue.js, Angular, Svelte</td>
+                            <td>Arquitetura de componentes, alta retenção e facilidade de uso.</td>
+                        </tr>
+                        <tr>
+                            <td>Build Tools e Runtimes</td>
+                            <td>Vite, Node.js, Bun</td>
+                            <td>Transição para alto desempenho e execução ágil.</td>
+                        </tr>
+                        <tr>
+                            <td>Especializados</td>
+                            <td>Apache Kafka</td>
+                            <td>Processamento em tempo real para arquiteturas dirigidas a eventos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <h3>5. Critérios de Escolha e Seleção</h3>
+                <p class="about-text">
+                    A escolha de um <i>framework</i> deve considerar: Comunidade e Suporte, Curva de Aprendizado, Escalabilidade e Manutenibilidade, Segurança (com proteções nativas contra SQL Injection, XSS e CSRF), Mercado/Ecossistema e Desempenho.
+                </p>
+
+                <br>
+                <h3>6. Conclusão</h3>
+                <p class="about-text">
+                    Os <i>frameworks</i> são ativos estratégicos indispensáveis para a produtividade no desenvolvimento de software moderno. Não existe um <i>framework</i> universalmente superior; a decisão correta depende da análise criteriosa do domínio, da experiência da equipe e da sustentabilidade a longo prazo do projeto.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">7. Referências</h2>
+            <div class="formation-container bd-grid">
+                <p>DIAS, R. J. F. A importância do framework na governança de TI. Revista Científica Semana Acadêmica, 2023.</p>
+                <p>FAYAD, M.; SCHMIDT, D. C. Object-oriented application frameworks. Communications of the ACM, 1997.</p>
+                <p>INFOQ. State of JavaScript 2025: Survey Reveals a Maturing Ecosystem. 2026.</p>
+                <p>PINTO, M. A. S. Análise comparativa entre os frameworks back-end: Django, Express.js e Spring Boot. UFLA, 2024.</p>
+                <p>PUC-RIO. Frameworks: Conceitos Gerais (Dissertação), s.d.</p>
+                <p>JETBRAINS. JavaScript and TypeScript Trends 2024. 2024.</p>
+                <p>STATE OF JS. Front-end Frameworks Ratios Over Time. 2024.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-title">Fatec Sorocaba — Análise e Desenvolvimento de Sistemas</p>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
